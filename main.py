@@ -39,7 +39,7 @@ def flipcoin():
         result='Heads!'
     if res == 2:
         result='Tails!'
-    lbl.config(text=str(res))
+    lbl.config(text=str(result))
 b1=tk.Button(text='Roll a D20', command=roll20)
 b2=tk.Button(text='Roll a custom die',command=rollcustom)
 b3=tk.Button(text='Roll a D6', command=roll6)
