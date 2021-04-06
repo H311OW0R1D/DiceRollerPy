@@ -35,6 +35,10 @@ def roll100():
     lbl.config(text=stringver)
 def flipcoin():
     res = r.randint(1,2)
+    if res == 1:
+        result='Heads!'
+    if res == 2:
+        result='Tails!'
     lbl.config(text=str(res))
 b1=tk.Button(text='Roll a D20', command=roll20)
 b2=tk.Button(text='Roll a custom die',command=rollcustom)
